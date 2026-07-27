@@ -412,6 +412,12 @@ a {
     font-weight: 600;
 }
 
+/* "Forthcoming" is wider than a year - shrink it to fit the pill column */
+.publication-item:first-child .year {
+    font-size: 0.68rem;
+    padding: 0.18rem 0.4rem;
+}
+
 .publication-item h4 {
     font-size: 1rem;
     color: var(--primary);
