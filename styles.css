@@ -363,19 +363,18 @@ a {
 .publications-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    border-top: 1px solid var(--border);
 }
 
 .publication-item {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem 2rem;
-    box-shadow: var(--shadow);
-    transition: all 0.3s;
+    position: relative;
+    padding: 0.85rem 0.5rem 0.85rem 5.4rem;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
 }
 
 .publication-item:hover {
-    box-shadow: var(--shadow-lg);
+    background: var(--background-alt);
 }
 
 .publication-item.featured {
@@ -401,33 +400,42 @@ a {
 }
 
 .publication-item .year {
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
     display: inline-block;
     background: var(--accent);
     color: white;
-    padding: 0.25rem 0.75rem;
+    padding: 0.1rem 0.55rem;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
 }
 
 .publication-item h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--primary);
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
+    margin-bottom: 0.2rem;
+    line-height: 1.45;
 }
 
 .publication-item .authors {
+    display: inline;
     color: var(--text-light);
-    font-size: 0.95rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
 }
 
 .publication-item .journal {
+    display: inline;
     color: var(--text-muted);
     font-style: italic;
     font-size: 0.9rem;
+}
+
+.publication-item .journal::before {
+    content: "\00B7\00A0";
+    font-style: normal;
+    color: var(--text-muted);
 }
 
 /* Policy writing */
@@ -803,6 +811,15 @@ a {
 
     .hero-content h1 {
         font-size: 2rem;
+    }
+
+    .publication-item {
+        padding-left: 0.5rem;
+    }
+
+    .publication-item .year {
+        position: static;
+        margin-bottom: 0.3rem;
     }
 
     .section {
