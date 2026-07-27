@@ -132,7 +132,9 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* Bernese Alps ridgeline (Eiger, Moench, Jungfrau) easing east to the Zugspitze */
+    background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201440%20200'%20preserveAspectRatio='none'%3E%0A%3Cpath%20fill='%230d1f3c'%20fill-opacity='0.13'%20d='M0,122%20L140,102%20L300,114%20L460,94%20L620,118%20L800,106%20L980,124%20L1140,104%20L1300,122%20L1440,112%20L1440,200%20L0,200%20Z'/%3E%0A%3Cpath%20fill='%230d1f3c'%20fill-opacity='0.28'%20d='M0,124%20L45,110%20L70,114%20L100,96%20L132,72%20L152,62%20L178,50%20L196,68%20L215,86%20L235,80%20L252,92%20L270,74%20L290,58%20L305,57%20L330,74%20L368,98%20L390,80%20L405,66%20L420,73%20L438,58%20L452,48%20L472,64%20L500,84%20L545,110%20L600,134%20L660,148%20L730,140%20L800,154%20L870,146%20L930,158%20L1000,134%20L1060,102%20L1105,84%20L1130,92%20L1160,74%20L1190,88%20L1220,82%20L1270,110%20L1330,130%20L1390,142%20L1440,134%20L1440,200%20L0,200%20Z'/%3E%0A%3Cpath%20fill='%230d1f3c'%20fill-opacity='0.36'%20d='M0,180%20L120,170%20L260,178%20L420,166%20L580,176%20L760,168%20L920,177%20L1080,169%20L1240,178%20L1440,170%20L1440,200%20L0,200%20Z'/%3E%0A%3C/svg%3E") bottom center no-repeat;
+    background-size: 100% 200px;
 }
 
 .hero-container {
@@ -728,6 +730,10 @@ a {
 @media (max-width: 640px) {
     .nav-logo {
         font-size: 1rem;
+    }
+
+    .hero::before {
+        background-size: 100% 110px;
     }
 
     .hero {
