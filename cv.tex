@@ -1,0 +1,232 @@
+% Curriculum Vitae — Prof. Dr. Samuel Muehlemann
+% Compile with: pdflatex cv.tex (run twice for correct page totals)
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,top=2.2cm,bottom=2.4cm,left=2.4cm,right=2.4cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{hanging}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+
+\setlength{\parindent}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small Page \thepage\ of \pageref{LastPage}}
+
+% Section heading: small caps with a rule
+\newcommand{\cvsection}[1]{%
+  \vspace{1.1em}%
+  {\large\textsc{#1}}\par
+  \vspace{0.15em}\hrule\vspace{0.65em}%
+}
+
+% Two-column row: wrapping text left, date pinned top-right
+\newcommand{\cvdated}[2]{%
+  \begin{minipage}[t]{\dimexpr\linewidth-6.2em\relax}#1\end{minipage}%
+  \hfill
+  \begin{minipage}[t]{5.8em}\raggedleft #2\end{minipage}%
+}
+
+% Position entry: bold institution, date flush right, role on next line
+\newcommand{\cventry}[3]{%
+  \cvdated{\textbf{#1}}{#2}\par
+  {\itshape #3}\par\vspace{0.5em}%
+}
+
+% Education entry: single line, date flush right
+\newcommand{\cvedu}[2]{\cvdated{\textbf{#1}}{#2}\par\vspace{0.25em}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Prof. Dr. Samuel Muehlemann}\\[0.5em]
+  LMU Munich School of Management \,|\, Ludwig-Maximilians-Universit\"at M\"unchen\\
+  Geschwister-Scholl-Platz 1, D-80539 Munich, Germany\\
+  \href{mailto:muehlemann@lmu.de}{muehlemann@lmu.de} \,|\,
+  \href{https://scholar.google.de/citations?user=mkNGu5kAAAAJ&hl=de}{Google Scholar} \,|\,
+  \href{https://orcid.org/0000-0001-7361-6787}{ORCID}\\[0.7em]
+  {\large Curriculum Vitae --- July 2026}
+\end{center}
+
+\vspace{0.4em}
+\textbf{Research Interests:} Personnel Economics, Economics of Education, Labor Economics
+
+\cvsection{Academic Positions}
+
+\cventry{LMU Munich School of Management, Munich, Germany}{2014 --}
+  {Professor of Human Resource Education and Development}
+
+\cventry{University of Zurich, Faculty of Business, Economics and Informatics, Switzerland}{2015 --}
+  {Guest Lecturer (Master's program; PhD program for Swiss Leading House VPET-ECON)}
+
+\cventry{University of Bern, Centre for Research in Economics of Education, Switzerland}{2009 -- 2014}
+  {Senior Research Associate (2009--2011), Deputy Head (2011--2014)}
+
+\cvsection{Visiting Positions}
+
+\cventry{University of California, Berkeley, IRLE, USA}{2013 -- 2014}
+  {Visiting Scholar}
+
+\cventry{King's College London, Department of Management, UK}{2009}
+  {Visiting Academic}
+
+\cvsection{Fellowships and Committee Memberships}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0.15em,topsep=0pt]
+  \item \cvdated{Federal Institute for Vocational Education and Training (BIBB), Research Fellow}{2022 --}
+  \item \cvdated{ROA, Maastricht University, Research Fellow}{2022 --}
+  \item \cvdated{IZA Institute of Labor Economics, Research Fellow}{2012 --}
+  \item \cvdated{Expert Network on Economics and Sociology of Education and Training (ENESET), Member}{2025 --}
+  \item \cvdated{European Expert Network on Economics of Education (EENEE), Member}{2021 -- 2024}
+  \item \cvdated{Swiss National Science Foundation, Steering Committee Member NRP 77}{2020 -- 2024}
+  \item \cvdated{German Economic Association (VfS), Research Committee Economics of Education}{2012 --}
+  \item \cvdated{Federal Commission for Child and Youth Affairs (EKKJ), Member}{2012 -- 2014}
+\end{itemize}
+
+\cvsection{Editorial Board Membership}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0.15em,topsep=0pt]
+  \item \cvdated{Editorial Advisory Board, \textit{Empirical Research in Vocational Education and Training} (ERVET), Springer}{2018 --}
+\end{itemize}
+
+\cvsection{Education}
+
+\cvedu{University of Bern, Dr.\ rer.\ oec.\ (Economics), \textnormal{\itshape summa cum laude}}{2008}
+\cvedu{University of Bern, Lic.\ rer.\ pol.\ (Economics and Management)}{2004}
+\cvedu{University of British Columbia, Visiting Student (Honours Economics)}{2000 -- 2001}
+
+\cvsection{Publications in Refereed Journals}
+
+\begin{hangparas}{1.5em}{1}
+
+Gholami, M., \& Muehlemann, S. (forthcoming). Do soft-skills courses pay for individuals? Evidence from German matched data. \textit{Empirical Research in Vocational Education and Training}.
+
+Linckh, C., Muehlemann, S., \& Pfeifer, H. (2026). Beggars cannot be choosers: Labor market tightness, hiring standards, wages, and hiring costs. \textit{Labour Economics}. Advance online publication. \url{https://doi.org/10.1016/j.labeco.2026.102941}
+
+Gholami, M., \& Muehlemann, S. (2026). Pathways to prosperity: The role of cognitive and non-cognitive skills in employer quality and early career earnings. \textit{Education Economics}. Advance online publication. \url{https://doi.org/10.1080/09645292.2026.2664425}
+
+Weis, K., Muehlemann, S., \& Pfeifer, H. (2026). Works councils and apprenticeship training: Heterogeneous works councils, heterogeneous effects? \textit{British Journal of Industrial Relations}, \textit{64}(2), 250--262. \url{https://doi.org/10.1111/bjir.70030}
+
+Muehlemann, S. (2025). Artificial intelligence adoption and workplace training. \textit{Journal of Economic Behavior \& Organization}, \textit{238}, 107206.
+
+Muehlemann, S., Dietrich, H., Pfann, G., \& Pfeifer, H. (2022). Shocks in the market for apprenticeship training. \textit{Economics of Education Review}, \textit{86}, 102197.
+
+Muehlemann, S., Pfeifer, H., \& Wittek, B. (2020). The effect of business cycle expectations on the German apprenticeship market: Estimating the impact of Covid-19. \textit{Empirical Research in Vocational Education and Training}, \textit{12}(1), 1--30.
+
+Moretti, L., Mayerl, M., Muehlemann, S., Schl\"ogl, P., \& Wolter, S.~C. (2019). So similar and yet so different: A firm's net costs and post-training benefits from apprenticeship training in Austria and Switzerland. \textit{Evidence-based HRM}, \textit{7}(2), 229--246.
+
+Koch, B., Muehlemann, S., \& Pfeifer, H. (2019). Do works councils improve the quality of apprenticeship training? Evidence from German workplace data. \textit{Journal of Participation and Employee Ownership}, \textit{2}(1), 47--59.
+
+Muehlemann, S., \& Strupler Leiser, M. (2018). Hiring costs and labor market tightness. \textit{Labour Economics}, \textit{52}, 122--131.
+
+Wenzelmann, F., Muehlemann, S., \& Pfeifer, H. (2017). The costs of recruiting apprentices: Evidence from German workplace-level data. \textit{German Journal of Human Resource Management}, \textit{31}(2), 108--131.
+
+Muehlemann, S., \& Wolter, S.~C. (2017). Can Spanish firms offer dual apprenticeships without making a net investment? \textit{Evidence-based HRM}, \textit{5}(1), 107--118.
+
+Muehlemann, S., \& Pfeifer, H. (2016). The structure of hiring costs in Germany. \textit{Industrial Relations}, \textit{55}(2), 193--218.
+
+Blatter, M., Muehlemann, S., Schenker, S., \& Wolter, S.~C. (2016). Hiring costs for skilled workers and the supply of firm-provided training. \textit{Oxford Economic Papers}, \textit{68}(1), 238--257.
+
+Muehlemann, S., \& Wolter, S.~C. (2014). Return on investment of apprenticeship systems for enterprises. \textit{IZA Journal of Labor Policy}, \textit{3}(25), 1--22.
+
+Kriechel, B., Muehlemann, S., Pfeifer, H., \& Sch\"utte, M. (2014). Works councils, collective bargaining and apprenticeship training. \textit{Industrial Relations}, \textit{53}(2), 199--222.
+
+Muehlemann, S., Ryan, P., \& Wolter, S.~C. (2013). Monopsony power, pay structure and training. \textit{Industrial and Labor Relations Review}, \textit{66}(5), 1095--1112.
+
+Blatter, M., Muehlemann, S., \& Schenker, S. (2012). The costs of hiring skilled workers. \textit{European Economic Review}, \textit{56}(1), 20--35.
+
+Muehlemann, S., \& Wolter, S.~C. (2011). Firm-sponsored training and poaching externalities in regional labor markets. \textit{Regional Science and Urban Economics}, \textit{41}(6), 560--570.
+
+Muehlemann, S., Pfeifer, H., Walden, G., Wenzelmann, F., \& Wolter, S.~C. (2010). The financing of apprenticeship training in the light of labor market regulations. \textit{Labour Economics}, \textit{17}(5), 799--809.
+
+Muehlemann, S., Wolter, S.~C., \& Wueest, A. (2009). Apprenticeship training and the business cycle. \textit{Empirical Research in Vocational Education and Training}, \textit{1}(2), 173--186.
+
+Muehlemann, S., Pfeifer, H., Walden, G., Wenzelmann, F., \& Wolter, S.~C. (2009). Cost and benefit of apprenticeship training: A comparison of Germany and Switzerland. \textit{Applied Economics Quarterly}, \textit{55}(1), 7--37.
+
+Muehlemann, S., Schweri, J., Winkelmann, R., \& Wolter, S.~C. (2007). An empirical analysis of the decision to train apprentices. \textit{Labour}, \textit{21}(3), 419--441.
+
+Wolter, S.~C., Muehlemann, S., \& Schweri, J. (2006). Why some firms train apprentices and many others do not. \textit{German Economic Review}, \textit{7}(3), 249--264.
+
+\end{hangparas}
+
+\cvsection{Handbook Articles \& Encyclopedia Entries}
+
+\begin{hangparas}{1.5em}{1}
+
+Muehlemann, S. (2025). Supply and demand shocks in apprenticeship markets and the role of institutions. In P.~R\'obert \& E.~Saar (Eds.), \textit{Handbook on Education and the Labour Market}. Edward Elgar Publishing.
+
+Muehlemann, S., \& Pfeifer, H. (2023). Evaluating apprenticeship training programs for firms. \textit{IZA World of Labor}, 484.
+
+Muehlemann, S., \& Wolter, S.~C. (2021). Business cycles and apprenticeships. \textit{Oxford Research Encyclopedia of Economics and Finance}. Oxford University Press.
+
+Muehlemann, S., \& Wolter, S.~C. (2020). The economics of vocational training. In S.~Bradley \& C.~Green (Eds.), \textit{Economics of Education} (2nd ed.). Elsevier.
+
+Muehlemann, S. (2019). Measuring performance in VET and the employer's decision to invest in workplace training. In L.~Unwin \& D.~Guile (Eds.), \textit{Wiley Handbook on Vocational Education and Training}. Wiley Blackwell.
+
+\end{hangparas}
+
+\cvsection{Policy Reports \& Working Papers}
+
+\begin{hangparas}{1.5em}{1}
+
+Muehlemann, S. (2021). The impact of COVID-19 on apprenticeship markets. \textit{EENEE Ad hoc Report} 1/2021. European Commission.
+
+Muehlemann, S. (2016). The costs and benefits of work-based learning. \textit{OECD Education Working Papers}, No.~143. OECD Publishing.
+
+Muehlemann, S., \& Wolter, S.~C. (2013). Return on investment of apprenticeship systems for enterprises: Evidence from cost-benefit analyses. \textit{EENEE Analytical Report} No.~16. European Commission.
+
+\end{hangparas}
+
+\cvsection{Keynotes and Policy Transfer Activities}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0.15em,topsep=0pt]
+  \item Second International Leading House Conference, University of Zurich: Keynote on cost-benefit analyses of apprenticeship training (2024)
+  \item Keynote on productivity effects of workplace training, delivered to delegation from University of Rosario, Colombian government, and business representatives, Munich (2022)
+  \item Deutsche Gesellschaft f\"ur Internationale Zusammenarbeit (GIZ): Expert in webinar on TVET private sector participation (2020)
+  \item BIBB / IAB Conference: Keynote on why German firms invest in apprenticeship training (2020)
+  \item European Vocational Skills Week, European Commission: Keynote on Italian apprenticeship models, event organized by Fondazione Giacomo Brodolini, JP Morgan \& Bertelsmann, Milan (2018)
+  \item International Labour Organisation (ILO): Experts Meeting, Geneva (2017)
+  \item OECD Workshops: Presentations on measuring costs/benefits and VET regulations, Bern (2016)
+  \item Swiss State Secretariat for Education, Research and Innovation (SBFI): Keynote on quality and cost-effectiveness in apprenticeship training, Bern (2015)
+  \item European Business Forum on Vocational Training: Roundtable, European Commission, Brussels (2014)
+  \item Global Cities Education Network: Presentation on the Swiss VET system, Melbourne (2014)
+\end{itemize}
+
+\cvsection{Research Grants and Policy Consulting}
+
+\begin{itemize}[leftmargin=1.2em,itemsep=0.15em,topsep=0pt]
+  \item Hans-B\"ockler-Foundation: Research grant ``Quality of work-based training in firms,'' joint with BIBB (2016--2018)
+  \item OECD: Contract for adult skills, policy reviews, and insights from PIAAC (2017--2018)
+  \item OECD: Intellectual services relative to work-based learning (2015--2016)
+  \item Bertelsmann Foundation: Research grant ``Apprenticeship training in Spain'' (2014--2015)
+  \item Swiss Federal Office for Professional Education and Technology: Research grant ``The impact of internationalization on labor market-oriented education'' (2011--2013)
+  \item Swiss National Science Foundation: Short research visit grant, King's College London (2009)
+  \item Leading House Best Paper Award: 1st Prize (2011, 2013, 2015, 2016); Runner-up (2010, 2012, 2014, 2018)
+\end{itemize}
+
+\cvsection{Teaching Experience}
+
+\textbf{PhD Level}\par
+\textit{Quantitative Methods}, LMU Munich (2020--); \textit{Apprenticeship Training: Institutions and Markets}, Swiss Leading House VPET-ECON, University of Zurich (2018, 2019, 2022); \textit{Workshop in Human Capital Theory}, LMU Munich (2015).
+
+\vspace{0.5em}
+\textbf{Graduate Level (Master)}\par
+\textit{Empirical Methods in Human Resource Education and Management}, LMU Munich (2015--); \textit{Advanced Human Resource Development}, LMU Munich (2015--); \textit{Managing Education and Training in Firms/for Firms}, University of Zurich (2015--); \textit{Human Resource Development: A Global Perspective}, LMU Munich (2021, 2022); \textit{Recent Topics in Human Resource Development}, LMU Munich (2017--2020); \textit{Selected Topics in Human Resource Education and Management}, LMU Munich (2014); \textit{Recent Topics in Economics of Education and Personnel Economics}, University of Bern (2010--2011); \textit{Labour Economics}, SFIVET (2010).
+
+\vspace{0.5em}
+\textbf{Undergraduate Level (Bachelor)}\par
+\textit{Institutionen und Berufsbildungspolitik HRE\&M III}, LMU Munich (2014--); \textit{Economics of Personnel and Training}, University of Bern (2010--2011).
+
+\cvsection{Professional Service: Refereeing}
+
+{\small
+Annals of Public and Cooperative Economics, Applied Economics Quarterly, The B.E. Journal of Economic Analysis \& Policy, British Journal of Industrial Relations, Economics of Education Review, Education Economics, Empirical Economics, Empirical Research in Vocational Education and Training, European Journal of Political Economy, Evidence-based HRM, German Journal of Human Resource Management, IZA Journal of Labor Economics, Human Resource Management Journal, Industrial and Labor Relations Review, Industrial Relations, International Journal of Manpower, Journal of the European Economic Association, Journal of Economic Behavior \& Organization, Journal for Labour Market Research, Journal of Economics and Statistics, Journal of Labor Economics, Journal of Human Resources, Journal of Regional Science, Labour Economics, LABOUR, Oxford Economic Papers, Regional Science and Urban Economics, Regional Studies, Scandinavian Journal of Economics, Schmalenbach Business Review, Scottish Journal of Political Economy, Socio-Economic Review, Swiss Journal of Economics and Statistics.
+}
+
+\end{document}
