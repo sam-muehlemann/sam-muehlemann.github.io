@@ -1,8 +1,8 @@
 :root {
     --primary: #1a365d;
     --primary-light: #2c5282;
-    --accent: #e53e3e;
-    --accent-light: #fc8181;
+    --accent: #d32f2f;
+    --accent-dark: #b02a2a;
     --background: #ffffff;
     --background-alt: #f7fafc;
     --text: #1a202c;
@@ -229,7 +229,7 @@ a {
 }
 
 .btn-primary:hover {
-    background: var(--accent-light);
+    background: var(--accent-dark);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -243,6 +243,38 @@ a {
 .btn-secondary:hover {
     border-color: white;
     background: rgba(255, 255, 255, 0.1);
+}
+
+/* News bar */
+.news-bar {
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.news-bar .news-label {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.15rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.news-bar a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.news-bar a:hover {
+    color: var(--accent);
 }
 
 /* Sections */
