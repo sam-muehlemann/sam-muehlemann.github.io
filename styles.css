@@ -168,6 +168,16 @@ a {
     margin-bottom: 2rem;
 }
 
+.hero-content .affiliation a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    padding-bottom: 1px;
+    transition: border-color 0.2s;
+}
+
+.hero-content .affiliation a:hover {
+    border-bottom-color: white;
+}
+
 .hero-content p {
     font-size: 1.1rem;
     opacity: 0.9;
